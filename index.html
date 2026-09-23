@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ristorante Capulet – Pizza aus dem Steinofen, ehrliche Zutaten und italienische Gastlichkeit.">
+  <meta name="theme-color" content="#014421">
+  <title>Ristorante Capulet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&family=MonteCarlo&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23014421'/%3E%3Cpath d='M16 41 32 14l16 27a31 31 0 0 1-32 0Z' fill='%23FA9F42' stroke='%23F5F5F5' stroke-width='2'/%3E%3Ccircle cx='31' cy='27' r='3' fill='%23C91E27'/%3E%3Ccircle cx='25' cy='35' r='3' fill='%23C91E27'/%3E%3Ccircle cx='39' cy='36' r='3' fill='%23C91E27'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Direkt zum Inhalt -->
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ristorante Capulet – Startseite">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span><strong>Capulet</strong><small>Ristorante · Pizzeria</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span><span class="sr-only">Menü öffnen</span></button>
+    <nav id="navigation" aria-label="Hauptnavigation">
+      <a href="#geschichte">Über uns</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#besuch">Besuch</a>
+      <a class="button button-small" href="#reservieren">Tisch reservieren</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Startbereich -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="assets/capulet-hero-real.jpg" alt="Pizza beim Backen in einem echten Steinofen">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Ristorante · Pizzeria · Dal 1998</p>
+        <h1 id="hero-title">Ehrlich italienisch.<br><em>Mit Feuer gemacht.</em></h1>
+        <p class="hero-copy">Knuspriger Teig, reife Tomaten und Zeit – mehr braucht eine gute Pizza nicht.</p>
+        <div class="hero-actions">
+          <a class="button" href="#speisekarte">Speisekarte entdecken</a>
+          <a class="text-link" href="#geschichte">Unsere Geschichte <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>100%</span>forno a legna</div>
+    </section>
+
+    <!-- Kurze Infos -->
+    <section class="ticker" aria-label="Unsere Werte">
+      <span>Teig mit 48 Stunden Ruhe</span><i>◆</i><span>Zutaten aus Italien</span><i>◆</i><span>Im Holzofen gebacken</span><i>◆</i><span>Jeden Tag frisch</span>
+    </section>
+
+    <!-- Über uns -->
+    <section class="story section" id="geschichte">
+      <div class="story-copy reveal">
+        <p class="script">Benvenuti</p>
+        <p class="eyebrow dark">Unsere Küche</p>
+        <h2>Ein Stück Italien,<br>mitten in der Stadt.</h2>
+        <p>Bei Capulet beginnt alles mit wenigen, guten Dingen: Mehl, Wasser, Salz und Geduld. Unser Teig ruht zwei Tage, bevor er im heißen Steinofen seinen luftigen Rand bekommt.</p>
+        <p>Wir kochen so, wie wir selbst am liebsten essen – unkompliziert, großzügig und gemeinsam an einem Tisch.</p>
+        <a class="text-link green" href="#besuch">Lerne uns kennen <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure class="story-image reveal">
+        <img src="assets/capulet-kitchen-real.jpg" alt="Pizza und Zutaten auf einem rustikalen Holztisch" loading="lazy">
+        <figcaption>Handwerk, das man schmeckt.</figcaption>
+      </figure>
+      <div class="tomato-sketch" aria-hidden="true">🍅</div>
+    </section>
+
+    <!-- Speisekarte -->
+    <section class="menu section" id="speisekarte">
+      <div class="menu-heading reveal">
+        <div><p class="eyebrow light">Aus unserer Küche</p><h2>Unsere Klassiker</h2></div>
+        <p>Eine kleine Auswahl aus unserer Speisekarte. Saisonal, frisch und mit viel amore.</p>
+      </div>
+      <div class="menu-filters" role="group" aria-label="Speisen filtern">
+        <button class="filter active" data-filter="all" aria-pressed="true">Alle</button>
+        <button class="filter" data-filter="pizza" aria-pressed="false">Pizza</button>
+        <button class="filter" data-filter="pasta" aria-pressed="false">Pasta</button>
+        <button class="filter" data-filter="dolci" aria-pressed="false">Dolci</button>
+      </div>
+      <!-- Beispielgerichte -->
+      <div class="menu-list reveal">
+        <article data-category="pizza"><div><span class="menu-number">01</span><h3>Margherita Capulet</h3><p>San-Marzano-Tomaten · Fior di Latte · Basilikum · Olivenöl</p></div><strong>12,50 €</strong></article>
+        <article data-category="pizza"><div><span class="menu-number">02</span><h3>Pizza Bosco</h3><p>Fior di Latte · Pilze · Rosmarin · geräucherter Scamorza</p></div><strong>15,50 €</strong></article>
+        <article data-category="pasta"><div><span class="menu-number">03</span><h3>Tagliatelle al Ragù</h3><p>Hausgemachte Pasta · langsam geschmortes Ragù · Parmigiano</p></div><strong>16,90 €</strong></article>
+        <article data-category="pasta"><div><span class="menu-number">04</span><h3>Ravioli Verde</h3><p>Ricotta · Spinat · Salbeibutter · geröstete Haselnüsse</p></div><strong>17,50 €</strong></article>
+        <article data-category="dolci"><div><span class="menu-number">05</span><h3>Tiramisù della Casa</h3><p>Mascarpone · Espresso · Kakao · Amaretto</p></div><strong>7,50 €</strong></article>
+      </div>
+    </section>
+
+    <!-- Zitat -->
+    <section class="quote-band">
+      <span class="pizza-line" aria-hidden="true">◯</span>
+      <blockquote>„La vita è una combinazione<br>di magia e pasta.“</blockquote>
+      <cite>— Federico Fellini</cite>
+    </section>
+
+    <!-- Kontakt und Reservierung -->
+    <section class="visit section" id="besuch">
+      <div class="visit-intro reveal">
+        <p class="script">A presto!</p>
+        <h2>Wir freuen uns<br>auf deinen Besuch.</h2>
+      </div>
+      <div class="visit-details reveal">
+        <!-- Beispieldaten -->
+        <div><p class="eyebrow dark">Adresse</p><p>Musterstraße 14<br>12345 Musterstadt</p></div>
+        <div><p class="eyebrow dark">Öffnungszeiten</p><p>Di–So&nbsp;&nbsp;17:00–23:00 Uhr<br>Montag Ruhetag</p></div>
+        <div><p class="eyebrow dark">Kontakt</p><p>0123 456 78 90<br>ciao@capulet-ristorante.de</p></div>
+      </div>
+      <aside class="reservation-card reveal" id="reservieren">
+        <p class="eyebrow light">Tisch reservieren</p>
+        <h3>Ein Abend bei Capulet</h3>
+        <p>Ruf uns an oder schreib uns eine Nachricht. Wir halten deinen Lieblingstisch frei.</p>
+        <a class="button cream" href="tel:+491234567890">Jetzt anrufen</a>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Unterer Bereich -->
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">C</span><span><strong>Capulet</strong><small>Ristorante · Pizzeria</small></span></a>
+    <p>© <span id="year"></span> Ristorante Capulet · Schulprojekt von Jamie</p>
+    <a href="#top">Nach oben ↑</a>
+  </footer>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
